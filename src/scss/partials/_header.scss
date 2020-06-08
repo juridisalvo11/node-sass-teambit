@@ -1,0 +1,39 @@
+.header-top {
+  padding: 10px;
+  font-weight: 600;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  color: $font_color;
+}
+
+.header-bottom {
+  color: $font_color;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+
+.header-bottom, .header-bottom-right {
+  @include flex(row, space-between, center)
+}
+
+.header-bottom-left img {
+  height: 50px;
+  vertical-align: middle;
+}
+
+.header-bottom-left span {
+  font-size: 20px;
+}
+
+.menu li {
+  font-size: 15px;
+  margin-right: 25px;
+  display: inline-block;
+}
+
+#menu-button {
+  color: #30488f;
+  background-color: white;
+}
