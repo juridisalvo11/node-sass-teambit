@@ -11,7 +11,6 @@
   font-size: 20px;
   font-weight: $font-weight;
   text-align: left;
-  width: 35%;
   img {
     margin-right: 15px;
     width: 140px;
@@ -25,9 +24,10 @@
 }
 
 .footer-right {
-  width: 65%;
   ul {
     margin-top: 0;
+    width: 131px;
+    padding: 8px; 
   }
   li {
     text-align: $testo_sinistra;

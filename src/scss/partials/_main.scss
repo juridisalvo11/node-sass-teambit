@@ -110,6 +110,16 @@ h1 {
   background-color: white;
   width: 550px;
   border: 1px solid black;
+  position: relative;
+}
+
+.quotation-marks {
+  position: absolute;
+  top: -30px;
+}
+
+.quote {
+  width: 40px;
 }
 
 .comment-box p {

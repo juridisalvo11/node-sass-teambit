@@ -10,6 +10,10 @@
   color: $font_color;
 }
 
+.arrow-icon {
+  padding-left: 10px;
+  font-size: 15px;
+}
 
 button {
   color: $button_font;
@@ -20,6 +24,10 @@ button {
   &:hover {
     background-color: $hover_color;
   }
+}
+
+.icon {
+  @include button_icon(18px, middle, 10px)
 }
 
 a {

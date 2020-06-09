@@ -13,6 +13,9 @@ let mix = require('laravel-mix');
 
 mix.js("src/js/app.js", "public/").sass("src/scss/app.scss", "public/");
 
+mix.copy('node_modules/@fortawesome/fontawesome-free/webfonts', 'public/fontawesome/fonts');
+mix.options({processCssUrls: false});
+
 // Full API
 // mix.js(src, output);
 // mix.react(src, output); <-- Identical to mix.js(), but registers React Babel compilation.

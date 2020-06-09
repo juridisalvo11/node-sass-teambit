@@ -9,3 +9,9 @@
   color:  $color;
   text-decoration: $decoration
 }
+
+@mixin button_icon($width, $align, $padding) {
+  width: $width;
+  vertical-align: $align;
+  padding-right: $padding;
+}
