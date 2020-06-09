@@ -8,11 +8,24 @@
 }
 
 .footer-left {
-  width: 30%;
+  font-size: 20px;
+  font-weight: $font-weight;
+  text-align: left;
+  width: 35%;
+  img {
+    margin-right: 15px;
+    width: 140px;
+  }
+  a {
+    color: $hover_color;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .footer-right {
-  width: 70%;
+  width: 65%;
   ul {
     margin-top: 0;
   }

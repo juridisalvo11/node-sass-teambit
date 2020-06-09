@@ -1,12 +1,12 @@
 .container {
-  width: 80%;
+  width: 85%;
   margin: auto;
 }
 
 .section-padding {
-  text-align: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  text-align: left;
+  padding-top: 50px;
+  padding-bottom: 50px;
   color: $font_color;
 }
 
@@ -14,9 +14,22 @@
 button {
   color: $button_font;
   border-radius: $bordo_button;
+  background-color: $button_background;
   padding: 5px 20px;
+  cursor: pointer;
+  &:hover {
+    background-color: $hover_color;
+  }
 }
 
 a {
-  @include anchor_style( #58402c, none)
+  @include anchor_style( #58402c, none);
+  &:hover {
+    color: $hover_color;
+  }
+}
+
+h3 {
+  font-size: 30px;
+  margin-top: 0;
 }

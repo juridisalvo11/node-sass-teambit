@@ -20,10 +20,6 @@
   width: 100%;
 }
 
-.title button {
-  background-color: $border-background;
-}
-
 .image-title {
   background-color: green;
 }
@@ -33,6 +29,7 @@ h1 {
 }
 
 .images-section {
+  text-align: center;
   background-color: $pink_section;
 }
 
@@ -62,7 +59,7 @@ h1 {
 }
 
 .rabbit {
-  border-bottom: 1px solid black;
+  border-bottom: $border_section;
   padding-bottom: 100px;
   margin-bottom: 100px;
 }
@@ -70,4 +67,52 @@ h1 {
 .rabbit-blue-title {
   font-size: 30px;
   margin-top: 100px;
+}
+
+.feedback {
+  display: flex;
+
+  .feedback-img{
+    width: 55%;
+  }
+  .feedback-titles {
+    font-size: 23px;
+    padding-left: 50px;
+    width: 35%
+  }
+}
+
+.feedback img {
+  width: 100%;
+}
+
+.title-image img {
+  text-align: center;
+  padding-top: 50px;
+  width: 250px;
+}
+
+.comment {
+  background-color: $pink_section;
+  line-height: 85px;
+}
+
+.comment-row {
+  @include flex(column, space-around, center)
+}
+.comment-title h2 {
+  max-width: 490px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.comment-box {
+  background-color: white;
+  width: 550px;
+  border: 1px solid black;
+}
+
+.comment-box p {
+  line-height: 30px;
+  padding: 10px 50px;
 }

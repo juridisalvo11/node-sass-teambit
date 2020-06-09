@@ -1,18 +1,22 @@
 .header-top {
   padding: 10px;
-  font-weight: 600;
   font-size: 12px;
-  font-weight: bold;
+  font-weight: $font-weight;
   text-align: center;
   color: $font_color;
   background-color: $pink_section;
 }
 
+#cookie {
+  color: $hover_color;
+}
+
 .header-bottom {
   color: $font_color;
+  font-weight: $font-weight;
   padding-top: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid black;
+  border-bottom: $border_section;
 }
 
 .header-bottom, .header-bottom-right {
@@ -35,6 +39,11 @@
 }
 
 #menu-button {
+  font-weight: $font-weight;
   color: #30488f;
   background-color: white;
+  &:hover {
+    color: white;
+    background-color: $hover_color;
+  }
 }
