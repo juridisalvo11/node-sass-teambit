@@ -374,7 +374,7 @@ template {
   margin: auto;
 }
 
-section {
+.section-padding {
   text-align: center;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -387,6 +387,11 @@ button {
   padding: 5px 20px;
 }
 
+a {
+  color: #58402c;
+  text-decoration: none;
+}
+
 .header-top {
   padding: 10px;
   font-weight: 600;
@@ -394,6 +399,7 @@ button {
   font-weight: bold;
   text-align: center;
   color: #58402c;
+  background-color: #FFE7D2;
 }
 
 .header-bottom {
@@ -454,11 +460,6 @@ button {
   width: 100%;
 }
 
-.title a {
-  color: #58402c;
-  text-decoration: none;
-}
-
 .title button {
   background-color: #30488f;
 }
@@ -514,5 +515,41 @@ h1 {
 .rabbit-blue-title {
   font-size: 30px;
   margin-top: 100px;
+}
+
+.footer-row {
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer-left,
+.footer-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.footer-left {
+  width: 30%;
+}
+
+.footer-right {
+  width: 70%;
+}
+
+.footer-right ul {
+  margin-top: 0;
+}
+
+.footer-right li {
+  text-align: left;
+  list-style-type: none;
+  line-height: 35px;
+}
+
+.footer-right li h5 {
+  margin-top: 0;
+  font-size: 20px;
 }
 

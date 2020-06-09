@@ -1,0 +1,29 @@
+.footer-row {
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer-left, .footer-right {
+  @include flex(row, space-around, flex-start);
+}
+
+.footer-left {
+  width: 30%;
+}
+
+.footer-right {
+  width: 70%;
+  ul {
+    margin-top: 0;
+  }
+  li {
+    text-align: $testo_sinistra;
+    list-style-type: none;
+    line-height: 35px;
+    h5 {
+      margin-top: 0;
+      font-size: 20px;
+    }
+  }
+
+}
